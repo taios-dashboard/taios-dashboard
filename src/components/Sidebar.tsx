@@ -1,19 +1,49 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
-  "Dashboard",
-  "Leads",
-  "Properties",
-  "Inspections",
-  "Content Generator",
-  "Ads Generator",
-  "Reports",
-  "Settings",
+  {
+    label: "Dashboard",
+    href: "/dashboard",
+  },
+  {
+    label: "Leads",
+    href: "/leads",
+  },
+  {
+    label: "Properties",
+    href: "/properties",
+  },
+  {
+    label: "Inspections",
+    href: "/inspections",
+  },
+  {
+    label: "Content Generator",
+    href: "/content-generator",
+  },
+  {
+    label: "Ads Generator",
+    href: "/ads-generator",
+  },
+  {
+    label: "Reports",
+    href: "/reports",
+  },
+  {
+    label: "Settings",
+    href: "/settings",
+  },
 ];
 
 export default function Sidebar() {
+  const pathname = usePathname();
+
   return (
-    <aside className="hidden min-h-screen w-72 flex-col bg-black px-6 py-6 text-white lg:flex">
+    <aside className="hidden h-screen w-72 flex-col overflow-y-auto bg-black px-6 py-6 text-white lg:flex">
       <div className="mb-8 rounded-2xl bg-white p-3">
         <Image
           src="/images/tobee-logo.jpg"
@@ -36,21 +66,27 @@ export default function Sidebar() {
       </div>
 
       <nav className="space-y-2">
-        {navItems.map((item) => (
-          <button
-            key={item}
-            className={`w-full rounded-xl px-4 py-3 text-left text-sm font-medium transition ${
-              item === "Dashboard"
-                ? "bg-red-600 text-white"
-                : "text-gray-300 hover:bg-white/10 hover:text-white"
-            }`}
-          >
-            {item}
-          </button>
-        ))}
+        {navItems.map((item) => {
+          const isActive =
+            pathname === item.href || pathname.startsWith(`${item.href}/`);
+
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`block w-full rounded-xl px-4 py-3 text-left text-sm font-medium transition ${
+                isActive
+                  ? "bg-red-600 text-white"
+                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
 
-      <div className="mt-auto rounded-2xl border border-white/10 bg-white/5 p-4">
+      <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-4">
         <p className="text-sm font-semibold">AI Status</p>
         <p className="mt-1 text-xs text-gray-400">
           Lead scoring, content support, and reporting are active in prototype
