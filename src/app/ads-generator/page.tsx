@@ -1,4 +1,5 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 
 const adChannels = [
   {
@@ -22,18 +23,12 @@ const adChannels = [
 export default function AdsGeneratorPage() {
   return (
     <AppLayout>
-      <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-          Campaign AI
-        </p>
-        <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-          Ads Generator
-        </h1>
-        <p className="mt-2 max-w-2xl text-sm text-gray-600">
-          Generate advertising copy for property campaigns across Facebook,
-          Instagram, Google, WhatsApp, and retargeting channels.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Campaign AI"
+        title="Ads Generator"
+        description="Generate advertising copy for property campaigns across Facebook, Instagram, Google, WhatsApp, and retargeting channels."
+        actionLabel="Generate Ads"
+      />
 
       <section className="grid gap-6 xl:grid-cols-[1fr_1.2fr]">
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
