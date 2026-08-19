@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar";
+import AppLayout from "@/components/AppLayout";
 
 const settingsSections = [
   {
@@ -25,69 +25,60 @@ const settingsSections = [
 
 export default function SettingsPage() {
   return (
-    <main className="min-h-screen bg-gray-100 text-gray-950">
-      <div className="flex">
-        <Sidebar />
+    <AppLayout>
+      <header className="mb-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
+          System Configuration
+        </p>
+        <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
+          Settings
+        </h1>
+        <p className="mt-2 max-w-2xl text-sm text-gray-600">
+          Configure company profile, user roles, AI behavior, security settings,
+          and backend-ready system preferences.
+        </p>
+      </header>
 
-        <section className="min-h-screen flex-1 px-5 py-6 lg:px-8">
-          <header className="mb-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-              System Configuration
-            </p>
-            <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-              Settings
-            </h1>
-            <p className="mt-2 max-w-2xl text-sm text-gray-600">
-              Configure company profile, user roles, AI behavior, security
-              settings, and backend-ready system preferences.
-            </p>
-          </header>
-
-          <section className="grid gap-5 md:grid-cols-2">
-            {settingsSections.map((section) => (
-              <div
-                key={section.title}
-                className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm"
-              >
-                <h2 className="text-xl font-bold text-gray-950">
-                  {section.title}
-                </h2>
-                <p className="mt-3 text-sm leading-6 text-gray-600">
-                  {section.description}
-                </p>
-
-                <button className="mt-5 rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50">
-                  Configure
-                </button>
-              </div>
-            ))}
-          </section>
-
-          <section className="mt-6 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-gray-950">
-              Backend Security Readiness
-            </h2>
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              This frontend is being prepared to connect to a secure backend
-              with authentication, role-based access control, validated API
-              requests, Swagger documentation, audit logs, and protected AI
-              processing.
+      <section className="grid gap-5 md:grid-cols-2">
+        {settingsSections.map((section) => (
+          <div
+            key={section.title}
+            className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm"
+          >
+            <h2 className="text-xl font-bold text-gray-950">{section.title}</h2>
+            <p className="mt-3 text-sm leading-6 text-gray-600">
+              {section.description}
             </p>
 
-            <div className="mt-5 grid gap-3 md:grid-cols-3">
-              <div className="rounded-2xl bg-gray-50 p-4 text-sm font-semibold text-gray-700">
-                Auth-ready UI
-              </div>
-              <div className="rounded-2xl bg-gray-50 p-4 text-sm font-semibold text-gray-700">
-                Role-based structure
-              </div>
-              <div className="rounded-2xl bg-gray-50 p-4 text-sm font-semibold text-gray-700">
-                Secure API planning
-              </div>
-            </div>
-          </section>
-        </section>
-      </div>
-    </main>
+            <button className="mt-5 rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50">
+              Configure
+            </button>
+          </div>
+        ))}
+      </section>
+
+      <section className="mt-6 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold text-gray-950">
+          Backend Security Readiness
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-gray-600">
+          This frontend is being prepared to connect to a secure backend with
+          authentication, role-based access control, validated API requests,
+          Swagger documentation, audit logs, and protected AI processing.
+        </p>
+
+        <div className="mt-5 grid gap-3 md:grid-cols-3">
+          <div className="rounded-2xl bg-gray-50 p-4 text-sm font-semibold text-gray-700">
+            Auth-ready UI
+          </div>
+          <div className="rounded-2xl bg-gray-50 p-4 text-sm font-semibold text-gray-700">
+            Role-based structure
+          </div>
+          <div className="rounded-2xl bg-gray-50 p-4 text-sm font-semibold text-gray-700">
+            Secure API planning
+          </div>
+        </div>
+      </section>
+    </AppLayout>
   );
 }
