@@ -1,4 +1,5 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 
 const contentIdeas = [
   {
@@ -21,18 +22,12 @@ const contentIdeas = [
 export default function ContentGeneratorPage() {
   return (
     <AppLayout>
-      <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-          Marketing AI
-        </p>
-        <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-          Content Generator
-        </h1>
-        <p className="mt-2 max-w-2xl text-sm text-gray-600">
-          Generate real estate captions, educational posts, WhatsApp messages,
-          property descriptions, and sales content.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Marketing AI"
+        title="Content Generator"
+        description="Generate real estate captions, educational posts, WhatsApp messages, property descriptions, and sales content."
+        actionLabel="Generate Content"
+      />
 
       <section className="grid gap-6 xl:grid-cols-[1fr_1.2fr]">
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
