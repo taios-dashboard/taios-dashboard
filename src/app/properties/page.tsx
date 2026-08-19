@@ -1,4 +1,5 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 
 const properties = [
   {
@@ -27,24 +28,12 @@ const properties = [
 export default function PropertiesPage() {
   return (
     <AppLayout>
-      <header className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-            Property Intelligence
-          </p>
-          <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-            Properties
-          </h1>
-          <p className="mt-2 max-w-2xl text-sm text-gray-600">
-            Manage property listings and prepare them for AI matching,
-            recommendations, inspections, and marketing.
-          </p>
-        </div>
-
-        <button className="rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
-          Add Property
-        </button>
-      </header>
+      <PageHeader
+        eyebrow="Property Intelligence"
+        title="Properties"
+        description="Manage property listings and prepare them for AI matching, recommendations, inspections, and marketing."
+        actionLabel="Add Property"
+      />
 
       <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {properties.map((property) => (
