@@ -1,4 +1,5 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 
 const settingsSections = [
   {
@@ -26,18 +27,11 @@ const settingsSections = [
 export default function SettingsPage() {
   return (
     <AppLayout>
-      <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-          System Configuration
-        </p>
-        <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-          Settings
-        </h1>
-        <p className="mt-2 max-w-2xl text-sm text-gray-600">
-          Configure company profile, user roles, AI behavior, security settings,
-          and backend-ready system preferences.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="System Configuration"
+        title="Settings"
+        description="Configure company profile, user roles, AI behavior, security settings, and backend-ready system preferences."
+      />
 
       <section className="grid gap-5 md:grid-cols-2">
         {settingsSections.map((section) => (
