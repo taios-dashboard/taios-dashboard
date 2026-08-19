@@ -1,4 +1,5 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 
 const reportCards = [
   {
@@ -32,18 +33,11 @@ const insights = [
 export default function ReportsPage() {
   return (
     <AppLayout>
-      <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-          Executive Intelligence
-        </p>
-        <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-          Reports
-        </h1>
-        <p className="mt-2 max-w-2xl text-sm text-gray-600">
-          View AI-assisted business reports covering leads, inspections,
-          property interest, marketing activity, and sales opportunities.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Executive Intelligence"
+        title="Reports"
+        description="View AI-assisted business reports covering leads, inspections, property interest, marketing activity, and sales opportunities."
+      />
 
       <section className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {reportCards.map((card) => (
