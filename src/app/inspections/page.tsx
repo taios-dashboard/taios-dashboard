@@ -1,4 +1,5 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 
 const inspections = [
   {
@@ -27,24 +28,12 @@ const inspections = [
 export default function InspectionsPage() {
   return (
     <AppLayout>
-      <header className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-            Inspection Management
-          </p>
-          <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-            Inspections
-          </h1>
-          <p className="mt-2 max-w-2xl text-sm text-gray-600">
-            Track property inspection bookings, client schedules, and AI
-            follow-up reminders.
-          </p>
-        </div>
-
-        <button className="rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
-          Book Inspection
-        </button>
-      </header>
+      <PageHeader
+        eyebrow="Inspection Management"
+        title="Inspections"
+        description="Track property inspection bookings, client schedules, and AI follow-up reminders."
+        actionLabel="Book Inspection"
+      />
 
       <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="mb-6">
