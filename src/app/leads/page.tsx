@@ -1,27 +1,16 @@
 import AppLayout from "@/components/AppLayout";
+import PageHeader from "@/components/PageHeader";
 import { recentLeads } from "@/data/mockData";
 
 export default function LeadsPage() {
   return (
     <AppLayout>
-      <header className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-red-600">
-            Lead Management
-          </p>
-          <h1 className="mt-2 text-3xl font-bold text-gray-950 md:text-4xl">
-            Leads
-          </h1>
-          <p className="mt-2 max-w-2xl text-sm text-gray-600">
-            View AI-qualified prospects, buyer interests, budgets, locations,
-            and recommended follow-up priority.
-          </p>
-        </div>
-
-        <button className="w-fit self-start rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700 md:self-auto">
-          Add Lead
-        </button>
-      </header>
+      <PageHeader
+        eyebrow="Lead Management"
+        title="Leads"
+        description="View AI-qualified prospects, buyer interests, budgets, locations, and recommended follow-up priority."
+        actionLabel="Add Lead"
+      />
 
       <section className="rounded-3xl border border-gray-200 bg-white p-5 shadow-sm md:p-6">
         <div className="mb-6 flex flex-col justify-between gap-3 md:flex-row md:items-center">
