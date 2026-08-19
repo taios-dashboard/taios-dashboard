@@ -18,7 +18,7 @@ export default function LeadsPage() {
           </p>
         </div>
 
-        <button className="rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
+        <button className="w-fit self-start md:self-auto rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
           Add Lead
         </button>
       </header>
@@ -39,8 +39,8 @@ export default function LeadsPage() {
           </div>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-gray-100">
-          <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+        <div className="max-w-full overflow-x-auto rounded-2xl border border-gray-100">
+          <table className="min-w-[760px] border-collapse text-left text-sm">
             <thead className="bg-gray-50 text-xs uppercase tracking-wide text-gray-500">
               <tr>
                 <th className="px-4 py-4">Name</th>

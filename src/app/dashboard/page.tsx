@@ -28,7 +28,7 @@ export default function DashboardPage() {
           </p>
         </div>
 
-        <button className="rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
+        <button className="w-fit self-start rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700 md:self-auto">
           Add New Lead
         </button>
       </header>
