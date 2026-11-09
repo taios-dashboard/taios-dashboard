@@ -10,6 +10,7 @@ export default function LeadsPage() {
         title="Leads"
         description="View live CRM prospects, buyer interests, pipeline stages, assignments, budgets, locations, and AI lead scores."
         actionLabel="Add Lead"
+        actionHref="/leads/new"
       />
 
       <LiveLeads />
