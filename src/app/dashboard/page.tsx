@@ -1,14 +1,13 @@
 import AppLayout from "@/components/AppLayout";
-import DashboardCard from "@/components/DashboardCard";
 import AISummary from "@/components/AISummary";
 import RecentLeads from "@/components/RecentLeads";
 import AIRecommendation from "@/components/AIRecommendation";
 import PageHeader from "@/components/PageHeader";
+import CrmDashboardSummary from "@/components/CrmDashboardSummary";
 import {
   aiFollowUpMessage,
   aiRecommendation,
   aiSummary,
-  dashboardStats,
   recentLeads,
 } from "@/data/mockData";
 
@@ -24,16 +23,7 @@ export default function DashboardPage() {
 
       <AISummary summary={aiSummary} />
 
-      <section className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {dashboardStats.map((stat) => (
-          <DashboardCard
-            key={stat.title}
-            title={stat.title}
-            value={stat.value}
-            change={stat.change}
-          />
-        ))}
-      </section>
+      <CrmDashboardSummary />
 
       <section className="mt-6 grid gap-6 xl:grid-cols-[1.4fr_1fr]">
         <RecentLeads leads={recentLeads} />
