@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import {
   FormEvent,
   useEffect,
@@ -533,7 +535,12 @@ export default function LiveLeads() {
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <h3 className="font-bold text-gray-950">
-                        {lead.fullName}
+                        <Link
+                            href={`/leads/${lead.id}`}
+                            className="font-bold text-gray-950 transition hover:text-red-600 hover:underline"
+                          >
+                            {lead.fullName}
+                          </Link>
                       </h3>
 
                       <p className="mt-1 text-sm text-gray-600">
@@ -680,7 +687,12 @@ export default function LiveLeads() {
                     >
                       <td className="px-4 py-4">
                         <p className="font-semibold text-gray-950">
-                          {lead.fullName}
+                          <Link
+                            href={`/leads/${lead.id}`}
+                            className="font-bold text-gray-950 transition hover:text-red-600 hover:underline"
+                          >
+                            {lead.fullName}
+                          </Link>
                         </p>
 
                         <p className="mt-1 text-xs text-gray-500">
