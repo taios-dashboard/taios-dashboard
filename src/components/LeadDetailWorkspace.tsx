@@ -430,7 +430,7 @@ export default function LeadDetailWorkspace({
               {lead.aiScore
                 === null
                 ? "Not scored"
-                : `${lead.aiScore}%`}
+                : String(lead.aiScore)}
             </p>
           </div>
         </div>

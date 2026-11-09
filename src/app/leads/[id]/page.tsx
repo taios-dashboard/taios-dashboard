@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AppLayout from "@/components/AppLayout";
 import LeadActivityTimeline from "@/components/LeadActivityTimeline";
 import LeadDetailWorkspace from "@/components/LeadDetailWorkspace";
@@ -28,6 +29,15 @@ export default async function LeadDetailPage({
       />
 
       <div className="space-y-6">
+        <div className="flex justify-end">
+          <Link
+            href={`/leads/${id}/edit`}
+            className="inline-flex rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700"
+          >
+            Edit Lead Details
+          </Link>
+        </div>
+
         <LeadDetailWorkspace
           leadId={id}
         />
