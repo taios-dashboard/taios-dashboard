@@ -2,6 +2,7 @@ import Link from "next/link";
 import AppLayout from "@/components/AppLayout";
 import LeadActivityTimeline from "@/components/LeadActivityTimeline";
 import LeadDetailWorkspace from "@/components/LeadDetailWorkspace";
+import LeadAssignmentPanel from "@/components/LeadAssignmentPanel";
 import PageHeader from "@/components/PageHeader";
 
 type LeadDetailPageProps = {
@@ -41,6 +42,8 @@ export default async function LeadDetailPage({
         <LeadDetailWorkspace
           leadId={id}
         />
+
+      <LeadAssignmentPanel leadId={id} />
 
         <LeadActivityTimeline
           leadId={id}
