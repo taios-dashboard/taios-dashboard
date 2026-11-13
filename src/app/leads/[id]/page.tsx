@@ -2,6 +2,7 @@ import Link from "next/link";
 import AppLayout from "@/components/AppLayout";
 import LeadActivityTimeline from "@/components/LeadActivityTimeline";
 import LeadDetailWorkspace from "@/components/LeadDetailWorkspace";
+import LeadPipelinePanel from "@/components/LeadPipelinePanel";
 import LeadAssignmentPanel from "@/components/LeadAssignmentPanel";
 import LeadFollowUpPanel from "@/components/LeadFollowUpPanel";
 import LeadPropertyInterestPanel from "@/components/LeadPropertyInterestPanel";
@@ -46,7 +47,9 @@ export default async function LeadDetailPage({
           leadId={id}
         />
 
-      <LeadAssignmentPanel leadId={id} />
+      <LeadPipelinePanel leadId={id} />
+
+        <LeadAssignmentPanel leadId={id} />
 
         <LeadFollowUpPanel leadId={id} />
 
