@@ -5,6 +5,7 @@ import LeadDetailWorkspace from "@/components/LeadDetailWorkspace";
 import LeadAssignmentPanel from "@/components/LeadAssignmentPanel";
 import LeadFollowUpPanel from "@/components/LeadFollowUpPanel";
 import LeadPropertyInterestPanel from "@/components/LeadPropertyInterestPanel";
+import LeadInspectionPanel from "@/components/LeadInspectionPanel";
 import PageHeader from "@/components/PageHeader";
 
 type LeadDetailPageProps = {
@@ -50,6 +51,8 @@ export default async function LeadDetailPage({
         <LeadFollowUpPanel leadId={id} />
 
         <LeadPropertyInterestPanel leadId={id} />
+
+        <LeadInspectionPanel leadId={id} />
 
         <LeadActivityTimeline
           leadId={id}
