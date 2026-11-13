@@ -3,6 +3,7 @@ import AppLayout from "@/components/AppLayout";
 import LeadActivityTimeline from "@/components/LeadActivityTimeline";
 import LeadDetailWorkspace from "@/components/LeadDetailWorkspace";
 import LeadAssignmentPanel from "@/components/LeadAssignmentPanel";
+import LeadFollowUpPanel from "@/components/LeadFollowUpPanel";
 import PageHeader from "@/components/PageHeader";
 
 type LeadDetailPageProps = {
@@ -44,6 +45,8 @@ export default async function LeadDetailPage({
         />
 
       <LeadAssignmentPanel leadId={id} />
+
+        <LeadFollowUpPanel leadId={id} />
 
         <LeadActivityTimeline
           leadId={id}
