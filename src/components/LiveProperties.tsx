@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import {
   FormEvent,
   useEffect,
@@ -756,6 +758,19 @@ export default function LiveProperties() {
                       {property.description}
                     </p>
                   ) : null}
+
+                  <div className="mt-5 flex items-center justify-between gap-3 border-t border-gray-100 pt-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">
+                      Catalogue management
+                    </p>
+
+                    <Link
+                      href={`/properties/${encodeURIComponent(property.id)}/edit`}
+                      className="rounded-full border border-gray-200 px-4 py-2 text-xs font-bold text-gray-700 transition hover:border-red-200 hover:bg-red-50 hover:text-red-700"
+                    >
+                      Edit Property
+                    </Link>
+                  </div>
                 </article>
               ),
             )}
