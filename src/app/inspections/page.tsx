@@ -10,6 +10,7 @@ export default function InspectionsPage() {
         title="Inspections"
         description="Track live property inspection bookings, client schedules, property details, and inspection status."
         actionLabel="Book Inspection"
+        actionHref="/leads"
       />
 
       <LiveInspections />

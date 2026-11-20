@@ -19,6 +19,7 @@ export default function DashboardPage() {
         title="Welcome to TAIOS"
         description="Tobee's AI-powered real estate operating system for leads, property intelligence, inspections, marketing, and reporting."
         actionLabel="Add New Lead"
+        actionHref="/leads/new"
       />
 
       <AISummary summary={aiSummary} />

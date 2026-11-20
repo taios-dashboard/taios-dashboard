@@ -28,9 +28,13 @@ export default function AdsGeneratorPage() {
         title="Ads Generator"
         description="Generate advertising copy for property campaigns across Facebook, Instagram, Google, WhatsApp, and retargeting channels."
         actionLabel="Generate Ads"
+        actionHref="/ads-generator#ads-generator-form"
       />
 
-      <section className="grid gap-6 xl:grid-cols-[1fr_1.2fr]">
+      <section
+        id="ads-generator-form"
+        className="grid scroll-mt-6 gap-6 xl:grid-cols-[1fr_1.2fr]"
+      >
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-gray-950">
             Create Ad Campaign

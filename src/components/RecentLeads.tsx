@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type Lead = {
   name: string;
   interest: string;
@@ -22,9 +24,12 @@ export default function RecentLeads({ leads }: RecentLeadsProps) {
           </p>
         </div>
 
-        <button className="rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
+        <Link
+          href="/leads"
+          className="rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+        >
           View all
-        </button>
+        </Link>
       </div>
 
       <div className="space-y-4">
