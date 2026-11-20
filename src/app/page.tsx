@@ -108,14 +108,12 @@ export default function Home() {
               href="/dashboard"
               className="rounded-full border border-gray-200 px-6 py-4 text-center text-sm font-bold text-gray-800 transition hover:bg-gray-50"
             >
-              View Prototype Dashboard
+              Open TAIOS Dashboard
             </Link>
           </div>
 
           <p className="mt-5 text-xs leading-5 text-gray-500">
-            Prototype access is open for now. When backend authentication is
-            added, dashboard pages will be protected.
-          </p>
+            TAIOS uses authenticated access for the operating workspace. Sign in to manage leads, properties, inspections, and reporting.</p>
         </div>
 
         <div className="rounded-[2rem] border border-gray-200 bg-gray-50 p-5 shadow-sm">
@@ -124,27 +122,25 @@ export default function Home() {
               Today&apos;s AI Summary
             </p>
             <h2 className="mt-4 text-2xl font-bold">
-              34 hot leads need priority follow-up.
+              Your real estate pipeline, in one operating view.
             </h2>
             <p className="mt-4 text-sm leading-7 text-gray-300">
-              TAIOS has identified strong buyer interest around duplexes, land
-              investments, and luxury apartments. Recommended action: send
-              inspection booking messages to hot leads within 24 hours.
+              TAIOS brings lead activity, property matching, inspection workflows, and management reporting into a single workspace.
             </p>
           </div>
 
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl bg-white p-5 shadow-sm">
               <p className="text-sm text-gray-500">Hot Leads</p>
-              <p className="mt-2 text-3xl font-black text-gray-950">34</p>
+              <p className="mt-2 text-2xl font-black text-gray-950">Live CRM</p>
             </div>
             <div className="rounded-2xl bg-white p-5 shadow-sm">
               <p className="text-sm text-gray-500">Inspections</p>
-              <p className="mt-2 text-3xl font-black text-gray-950">12</p>
+              <p className="mt-2 text-2xl font-black text-gray-950">Workflow</p>
             </div>
             <div className="rounded-2xl bg-white p-5 shadow-sm">
               <p className="text-sm text-gray-500">AI Reports</p>
-              <p className="mt-2 text-3xl font-black text-gray-950">7</p>
+              <p className="mt-2 text-2xl font-black text-gray-950">Reporting</p>
             </div>
             <div className="rounded-2xl bg-white p-5 shadow-sm">
               <p className="text-sm text-gray-500">Campaigns</p>
@@ -215,7 +211,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-gray-100 px-5 py-8 text-center text-sm text-gray-500">
-        TAIOS — Tobee AI Operating System. Prototype frontend for Tobee Empires.
+        TAIOS — Tobee AI Operating System for Tobee Empires.
       </footer>
     </main>
   );
