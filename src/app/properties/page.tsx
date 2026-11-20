@@ -9,6 +9,8 @@ export default function PropertiesPage() {
         eyebrow="Property Intelligence"
         title="Properties"
         description="Browse and manage the live TAIOS property catalogue for matching, inspections, recommendations, and marketing."
+        actionLabel="Add Property"
+        actionHref="/properties/new"
       />
 
       <LiveProperties />
