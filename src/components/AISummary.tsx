@@ -16,7 +16,7 @@ export default function AISummary({ summary }: AISummaryProps) {
         </div>
 
         <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-semibold">
-          Live Prototype
+          AI Preview
         </span>
       </div>
 

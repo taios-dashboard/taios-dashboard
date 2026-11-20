@@ -37,7 +37,7 @@ export default function ContentGeneratorPage() {
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-gray-950">Generate Content</h2>
           <p className="mt-1 text-sm text-gray-500">
-            Prototype form. Backend AI connection will come later.
+            AI-assisted content workflow preview. Live provider generation is not enabled in this demo environment.
           </p>
 
           <div className="mt-6 space-y-4">
@@ -75,8 +75,12 @@ export default function ContentGeneratorPage() {
               </select>
             </div>
 
-            <button className="w-full rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
-              Generate Content
+            <button
+              type="button"
+              disabled
+              className="w-full cursor-not-allowed rounded-full bg-gray-200 px-5 py-3 text-sm font-bold text-gray-500"
+            >
+              AI Generation Not Enabled
             </button>
           </div>
         </div>
@@ -84,7 +88,7 @@ export default function ContentGeneratorPage() {
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-gray-950">AI Output Preview</h2>
           <p className="mt-1 text-sm text-gray-500">
-            Sample generated copy for Tobee marketing.
+            Illustrative output format for Tobee marketing.
           </p>
 
           <div className="mt-6 rounded-2xl bg-gray-50 p-5 text-sm leading-7 text-gray-700">

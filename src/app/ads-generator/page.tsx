@@ -40,7 +40,7 @@ export default function AdsGeneratorPage() {
             Create Ad Campaign
           </h2>
           <p className="mt-1 text-sm text-gray-500">
-            Prototype form. Backend AI generation will be connected later.
+            AI-assisted campaign workflow preview. Live provider generation is not enabled in this demo environment.
           </p>
 
           <div className="mt-6 space-y-4">
@@ -89,8 +89,12 @@ export default function AdsGeneratorPage() {
               </select>
             </div>
 
-            <button className="w-full rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-700">
-              Generate Ads
+            <button
+              type="button"
+              disabled
+              className="w-full cursor-not-allowed rounded-full bg-gray-200 px-5 py-3 text-sm font-bold text-gray-500"
+            >
+              AI Generation Not Enabled
             </button>
           </div>
         </div>
@@ -100,7 +104,7 @@ export default function AdsGeneratorPage() {
             AI Ad Output Preview
           </h2>
           <p className="mt-1 text-sm text-gray-500">
-            Sample campaign copy generated for Tobee Empires.
+            Illustrative campaign output format for Tobee Empires.
           </p>
 
           <div className="mt-6 space-y-4">

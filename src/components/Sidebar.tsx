@@ -55,7 +55,7 @@ export default function Sidebar() {
       <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-4">
         <p className="text-sm font-semibold">AI Status</p>
         <p className="mt-1 text-xs text-gray-400">
-          Lead scoring, content support, and reporting are active in prototype
+          Lead management, property intelligence, inspections, and reporting are available from this workspace
           mode.
         </p>
       </div>
