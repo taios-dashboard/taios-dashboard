@@ -8,7 +8,7 @@ export default function LeadsPage() {
       <PageHeader
         eyebrow="Lead Management"
         title="Leads"
-        description="View live CRM prospects, buyer interests, pipeline stages, assignments, budgets, locations, and AI lead scores."
+        description="View live CRM prospects, buyer interests, pipeline stages, assignments, budgets, locations, and qualification status."
         actionLabel="Add Lead"
         actionHref="/leads/new"
       />

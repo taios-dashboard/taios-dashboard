@@ -423,14 +423,11 @@ export default function LeadDetailWorkspace({
 
           <div className="rounded-2xl bg-gray-50 px-5 py-4">
             <p className="text-xs font-bold uppercase tracking-wide text-gray-400">
-              AI Lead Score
+              AI Scoring
             </p>
 
             <p className="mt-1 text-2xl font-bold text-gray-950">
-              {lead.aiScore
-                === null
-                ? "Not scored"
-                : String(lead.aiScore)}
+              {"Not enabled in demo"}
             </p>
           </div>
         </div>

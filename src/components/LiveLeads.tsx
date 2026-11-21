@@ -611,35 +611,13 @@ export default function LiveLeads() {
                     </div>
 
                     <div className="col-span-2 rounded-xl bg-white p-3">
-                      <div className="mb-2 flex justify-between text-xs font-semibold text-gray-500">
-                        <span>
-                          AI Lead Score
-                        </span>
+                      <p className="text-xs font-semibold uppercase text-gray-400">
+                        AI Scoring
+                      </p>
 
-                        <span>
-                          {lead.aiScore
-                            === null
-                            ? "Not scored"
-                            : `${lead.aiScore}%`}
-                        </span>
-                      </div>
-
-                      <div className="h-2 rounded-full bg-gray-200">
-                        <div
-                          className="h-2 rounded-full bg-red-600"
-                          style={{
-                            width:
-                              `${Math.max(
-                                0,
-                                Math.min(
-                                  100,
-                                  lead.aiScore
-                                  ?? 0,
-                                ),
-                              )}%`,
-                          }}
-                        />
-                      </div>
+                      <p className="mt-1 font-bold text-gray-600">
+                        Not enabled in demo
+                      </p>
                     </div>
                   </div>
                 </article>
@@ -673,7 +651,7 @@ export default function LiveLeads() {
                     Assigned
                   </th>
                   <th className="px-4 py-4">
-                    AI Score
+                    AI Scoring
                   </th>
                 </tr>
               </thead>
@@ -749,10 +727,7 @@ export default function LiveLeads() {
                       </td>
 
                       <td className="px-4 py-4 font-bold text-gray-950">
-                        {lead.aiScore
-                          === null
-                          ? "—"
-                          : `${lead.aiScore}%`}
+                        {"Not enabled"}
                       </td>
                     </tr>
                   ),

@@ -27,7 +27,7 @@ export default function Sidebar() {
         </p>
         <h1 className="mt-2 text-2xl font-bold">Tobee AI OS</h1>
         <p className="mt-2 text-sm text-gray-400">
-          AI-powered real estate operating system.
+          Tobee real estate operating system.
         </p>
       </div>
 

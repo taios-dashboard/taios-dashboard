@@ -5,7 +5,7 @@ const features = [
   {
     title: "AI Lead Management",
     description:
-      "Capture, organize, and qualify real estate leads with AI-assisted scoring and follow-up recommendations.",
+      "Capture, organize, and qualify real estate leads with structured pipeline and follow-up workflows.",
   },
   {
     title: "Property Intelligence",
@@ -30,7 +30,7 @@ const features = [
   {
     title: "Executive Reports",
     description:
-      "View AI-assisted business summaries, lead performance, inspection pipeline, and marketing activity.",
+      "View management summaries, lead performance, inspection pipeline, and marketing activity.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-red-600">
-            AI-powered real estate operations
+            AI-ready real estate operations
           </p>
 
           <h1 className="mt-5 max-w-4xl text-4xl font-black tracking-tight text-gray-950 md:text-6xl">
@@ -93,7 +93,7 @@ export default function Home() {
           <p className="mt-6 max-w-2xl text-base leading-8 text-gray-600">
             TAIOS helps Tobee Empires and future real estate businesses improve
             sales follow-up, property recommendations, campaign creation, and
-            executive reporting through a structured AI-powered dashboard.
+            executive reporting through a structured operating dashboard.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
