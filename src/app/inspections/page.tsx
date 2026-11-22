@@ -9,7 +9,7 @@ export default function InspectionsPage() {
         eyebrow="Inspection Management"
         title="Inspections"
         description="Track live property inspection bookings, client schedules, property details, and inspection status."
-        actionLabel="Book Inspection"
+        actionLabel="Select Lead to Book"
         actionHref="/leads"
       />
 

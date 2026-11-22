@@ -25,8 +25,8 @@ export default function ContentGeneratorPage() {
       <PageHeader
         eyebrow="Marketing AI"
         title="Content Generator"
-        description="Generate real estate captions, educational posts, WhatsApp messages, property descriptions, and sales content."
-        actionLabel="Generate Content"
+        description="Preview the AI-assisted workflow for real estate captions, educational posts, WhatsApp messages, property descriptions, and sales content."
+        actionLabel="View AI Preview"
         actionHref="/content-generator#content-generator-form"
       />
 
@@ -35,7 +35,7 @@ export default function ContentGeneratorPage() {
         className="grid scroll-mt-6 gap-6 xl:grid-cols-[1fr_1.2fr]"
       >
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-gray-950">Generate Content</h2>
+          <h2 className="text-xl font-bold text-gray-950">Content Workflow Preview</h2>
           <p className="mt-1 text-sm text-gray-500">
             AI-assisted content workflow preview. Live provider generation is not enabled in this demo environment.
           </p>

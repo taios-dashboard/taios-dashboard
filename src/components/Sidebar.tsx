@@ -53,10 +53,9 @@ export default function Sidebar() {
       </nav>
 
       <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-4">
-        <p className="text-sm font-semibold">AI Status</p>
+        <p className="text-sm font-semibold">Workspace Status</p>
         <p className="mt-1 text-xs text-gray-400">
-          Lead management, property intelligence, inspections, and reporting are available from this workspace
-          mode.
+          Lead management, property intelligence, inspections, and reporting are available in this workspace.
         </p>
       </div>
     </aside>

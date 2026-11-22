@@ -475,7 +475,7 @@ export default function EditLeadForm({
 
         <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-500">
           Update the prospect&apos;s contact and requirement details.
-          Pipeline stage, assignment, AI score and system ownership
+          Pipeline stage, assignment, qualification status and system ownership
           are managed separately.
         </p>
       </div>

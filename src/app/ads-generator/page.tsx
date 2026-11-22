@@ -26,8 +26,8 @@ export default function AdsGeneratorPage() {
       <PageHeader
         eyebrow="Campaign AI"
         title="Ads Generator"
-        description="Generate advertising copy for property campaigns across Facebook, Instagram, Google, WhatsApp, and retargeting channels."
-        actionLabel="Generate Ads"
+        description="Preview the AI-assisted workflow for advertising copy across Facebook, Instagram, Google, WhatsApp, and retargeting channels."
+        actionLabel="View AI Preview"
         actionHref="/ads-generator#ads-generator-form"
       />
 
@@ -37,7 +37,7 @@ export default function AdsGeneratorPage() {
       >
         <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-gray-950">
-            Create Ad Campaign
+            Campaign Workflow Preview
           </h2>
           <p className="mt-1 text-sm text-gray-500">
             AI-assisted campaign workflow preview. Live provider generation is not enabled in this demo environment.
